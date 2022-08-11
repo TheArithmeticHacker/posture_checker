@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
   void startTimer(){
     if(running){
       msg = 'Cancel Session';
-      timer = Timer.periodic(Duration(milliseconds : 1), (timer) {
+      timer = Timer.periodic(Duration(seconds : 1), (timer) {
         setState(() {
           if((seconds == 0 && minutes == 0) || !running){
             if(seconds == 0 && minutes == 0){
